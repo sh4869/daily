@@ -3,8 +3,8 @@ name: Build and Deploy
 on:
   push:
     branches:
-      - 'master'
       - 'diary'
+      - 'master'
 
 env:
   CARGO_TERM_COLOR: always
@@ -16,6 +16,9 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
+      with:
+        ref: master
+        path: '.'
     - uses: actions/checkout@v2
       with:
         ref: diary
