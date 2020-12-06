@@ -33,7 +33,7 @@ jobs:
       with:
         command: run
     - name: GitHub Action for Firebase
-      uses: w9jds/firebase-action@v1.5.0
+      uses: w9jds/firebase-action@v2.0.0
       with:
           args: deploy --token $FIREBASE_TOKEN --only hosting --project sh4869-diary 
       env:
